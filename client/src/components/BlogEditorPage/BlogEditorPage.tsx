@@ -159,8 +159,9 @@ export default function BlogEditorPage() {
                 setImage={setThumbnail}
                 lable="Thumbnail Image"
               />
+              <div></div>
             </div>
-            <div className="">
+            <div>
               <label htmlFor="title" className="block pb-1">
                 Title <sup className="text-red-500">*</sup>
               </label>
@@ -174,6 +175,9 @@ export default function BlogEditorPage() {
                   formik.errors.title && formik.touched.title ? true : false
                 }
               />
+              {formik.errors.title && formik.touched.title && (
+                <div className="text-red-500 mt-1">{formik.errors.title}</div>
+              )}
             </div>
             <div className="text-start  mt-5">
               <label className="block pb-1">
@@ -195,6 +199,11 @@ export default function BlogEditorPage() {
                 <Option value="Product">Product</Option>
                 <Option value="Customer">Customer</Option>
               </Select>
+              {formik.errors.category && formik.touched.category && (
+                <div className="text-red-500 mt-1">
+                  {formik.errors.category}
+                </div>
+              )}
             </div>
             <div className=" mt-6">
               <label htmlFor="desc" className="block pb-1">
@@ -208,6 +217,9 @@ export default function BlogEditorPage() {
                 onBlur={formik.handleBlur}
                 error={formik.errors.desc && formik.touched.desc ? true : false}
               />
+              {formik.errors.desc && formik.touched.desc && (
+                <div className="text-red-500 mt-1">{formik.errors.desc}</div>
+              )}
             </div>
 
             <div className=" pt-5 h-[350px]">
