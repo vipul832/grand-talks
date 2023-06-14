@@ -40,7 +40,10 @@ const AdminPage = () => {
               </div>
             </div>
             <div className="lg:flex hidden">
-              <img src="./assets/content_creator.svg" alt="content-creator" />
+              <img
+                src="https://ik.imagekit.io/fqy6m4jmj/weimages/content_creator.svg?updatedAt=1686659275717"
+                alt="content-creator"
+              />
             </div>
           </div>
         </div>

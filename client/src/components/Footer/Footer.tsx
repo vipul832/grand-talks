@@ -23,7 +23,7 @@ export default function Footer() {
             <div className="logo-img-div relative w-8 h-8 rounded-lg items-center overflow-hidden flex justify-center">
               <img
                 className="logo-img"
-                src="./assets/logo.svg"
+                src="https://ik.imagekit.io/fqy6m4jmj/weimages/logo.svg?updatedAt=1686659275650"
                 alt="logo"
                 width="32"
                 height="32"

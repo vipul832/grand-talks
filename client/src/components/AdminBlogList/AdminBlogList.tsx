@@ -1,7 +1,5 @@
 import { Typography } from "@material-tailwind/react";
 import { Post } from "../../utils/types";
-import publishError from "../../../public/assets/publish error.svg";
-import draftError from "../../../public/assets/draft error.svg";
 import AdminBlogCard from "./AdminBlogCard";
 
 type AdminBlogListProps = {
@@ -25,7 +23,11 @@ export default function AdminBlogList({ data, tab }: AdminBlogListProps) {
             Write Some Blog
           </Typography>
           <div className="flex justify-center mt-8">
-            <img src={publishError} alt="publish error" width="500px" />
+            <img
+              src="https://ik.imagekit.io/fqy6m4jmj/weimages/publish_error.svg?updatedAt=1686659275686"
+              alt="publish error"
+              width="500px"
+            />
           </div>
         </div>
       ) : (
@@ -37,7 +39,11 @@ export default function AdminBlogList({ data, tab }: AdminBlogListProps) {
             All Work Done
           </Typography>
           <div className="flex justify-center mt-8">
-            <img src={draftError} alt="publish error" width="500px" />
+            <img
+              src="https://ik.imagekit.io/fqy6m4jmj/weimages/draft_error.svg?updatedAt=1686659275475"
+              alt="publish error"
+              width="500px"
+            />
           </div>
         </div>
       )}
