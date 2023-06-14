@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Tabs,
   TabsHeader,
@@ -9,20 +9,28 @@ import {
 import BlogList from "../../BlogList/BlogList";
 import { useGetPostsQuery } from "../../../App/api/postApi";
 import Pagination from "../../Paginate/Pagination";
-import { useSelector } from "react-redux";
-import { getSearchText } from "../../../App/feature/searchSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { getSearchText, resetSearch } from "../../../App/feature/searchSlice";
 import HomeShimmer from "../../Shimmer/HomeShimmer";
 
 export default function HomeTabs() {
   const [activeTab, setActiveTab] = React.useState("view_all");
   const { search } = useSelector(getSearchText);
   const [page, setPage] = useState(0);
+  const dispatch = useDispatch();
   const { data, isFetching } = useGetPostsQuery({
     category: activeTab,
     page: page + 1,
     limit: 10,
     search: search,
   });
+
+  useEffect(() => {
+    return () => {
+      dispatch(resetSearch());
+    };
+  }, []);
+
   console.log("home page", page);
   const totalPage = data?.totalPages;
   const data1 = [
