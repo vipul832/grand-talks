@@ -1,4 +1,5 @@
 import { Fragment, useReducer } from "react";
+import { toast } from "react-hot-toast";
 import {
   Button,
   Dialog,
@@ -6,9 +7,8 @@ import {
   DialogBody,
   DialogFooter,
 } from "@material-tailwind/react";
-import { Post } from "../../utils/types";
 import { useDeleteBlogMutation } from "../../App/api/postApi";
-import { toast } from "react-hot-toast";
+import { Post } from "../../utils/types";
 
 type deleteProps = {
   blog: Post;

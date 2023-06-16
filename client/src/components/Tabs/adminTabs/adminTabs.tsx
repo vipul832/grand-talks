@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import {
   Tabs,
   TabsHeader,
@@ -6,11 +7,9 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
-
-import AdminBlogList from "../../AdminBlogList/AdminBlogList";
 import { getUserInfo } from "../../../App/feature/userSlice";
-import { useSelector } from "react-redux";
 import { useGetAdminBlogsQuery } from "../../../App/api/postApi";
+import AdminBlogList from "../../AdminBlogList/AdminBlogList";
 import AdminShimmer from "../../Shimmer/AdminShimmer";
 
 export default function AdminTags() {

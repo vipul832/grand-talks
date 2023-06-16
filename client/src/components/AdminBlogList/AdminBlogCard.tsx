@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import { useUpdateBlogMutation } from "../../App/api/postApi";
-import { toast } from "react-hot-toast";
-import DeleteConfirm from "../DeleteModel/DeleteModel";
-import moment from "moment";
 import { Button, Typography } from "@material-tailwind/react";
+import { toast } from "react-hot-toast";
+import moment from "moment";
+import { useUpdateBlogMutation } from "../../App/api/postApi";
+import DeleteConfirm from "../DeleteModel/DeleteModel";
 import { Post } from "../../utils/types";
 
 type AdminBlogCardProps = {

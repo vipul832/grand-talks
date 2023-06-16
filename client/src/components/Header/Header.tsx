@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import {
   Navbar,
   Typography,
@@ -6,10 +8,7 @@ import {
   IconButton,
   Collapse,
 } from "@material-tailwind/react";
-import { NavLink, Link } from "react-router-dom";
-import { useSelector } from "react-redux";
 import { getAuthStatus } from "../../App/feature/authSlice";
-
 import ProfileMenu from "./ProfileMenu";
 
 export default function Header() {

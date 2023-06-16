@@ -1,3 +1,4 @@
+import { Link, useNavigate } from "react-router-dom";
 import {
   Card,
   CardHeader,
@@ -7,10 +8,9 @@ import {
   Avatar,
   Button,
 } from "@material-tailwind/react";
-import { Link, useNavigate } from "react-router-dom";
-import { Post } from "../../utils/types";
 import { BsArrowUpRight } from "react-icons/bs";
 import moment from "moment";
+import { Post } from "../../utils/types";
 
 type BlogCardProp = {
   title: string;

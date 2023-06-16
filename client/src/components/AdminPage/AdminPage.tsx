@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
-import { getUserInfo } from "../../App/feature/userSlice";
 import { Button, Typography } from "@material-tailwind/react";
-import AdminTabs from "../Tabs/adminTabs/adminTabs";
 import { Link } from "react-router-dom";
+import { getUserInfo } from "../../App/feature/userSlice";
+import AdminTabs from "../Tabs/adminTabs/adminTabs";
 
 const AdminPage = () => {
   const userInfo = useSelector(getUserInfo);

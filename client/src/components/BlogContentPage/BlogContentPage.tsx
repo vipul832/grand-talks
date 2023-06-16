@@ -1,5 +1,5 @@
-import { Typography, Avatar } from "@material-tailwind/react";
 import { Navigate, useLocation } from "react-router-dom";
+import { Typography, Avatar } from "@material-tailwind/react";
 import { Post } from "../../utils/types";
 
 export default function BlogContentPage() {

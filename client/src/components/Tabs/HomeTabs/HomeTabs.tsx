@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import {
   Tabs,
   TabsHeader,
@@ -6,12 +7,11 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
-import BlogList from "../../BlogList/BlogList";
 import { useGetPostsQuery } from "../../../App/api/postApi";
-import Pagination from "../../Paginate/Pagination";
-import { useDispatch, useSelector } from "react-redux";
 import { getSearchText, resetSearch } from "../../../App/feature/searchSlice";
+import BlogList from "../../BlogList/BlogList";
 import HomeShimmer from "../../Shimmer/HomeShimmer";
+import Pagination from "../../Paginate/Pagination";
 
 export default function HomeTabs() {
   const [activeTab, setActiveTab] = React.useState("view_all");

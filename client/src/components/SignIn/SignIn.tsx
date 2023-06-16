@@ -1,12 +1,12 @@
-import { Card, Input, Button, Typography } from "@material-tailwind/react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
+import { Card, Input, Button, Typography } from "@material-tailwind/react";
+import { toast } from "react-hot-toast";
 import { signInSchema } from "../../validation/signInSchema";
 import { useLoginUserMutation } from "../../App/api/authApi";
 import { setUser } from "../../App/feature/userSlice";
-import { useDispatch, useSelector } from "react-redux";
 import { getAuthStatus, setSignInUser } from "../../App/feature/authSlice";
-import { toast } from "react-hot-toast";
 
 const SignIn = () => {
   const [loginUser] = useLoginUserMutation();

@@ -1,3 +1,8 @@
+import { useSelector } from "react-redux";
+import { Link, useNavigate, Navigate } from "react-router-dom";
+import { useFormik } from "formik";
+import { useState } from "react";
+import { toast } from "react-hot-toast";
 import {
   Card,
   Input,
@@ -5,15 +10,10 @@ import {
   Button,
   Typography,
 } from "@material-tailwind/react";
-import { useFormik } from "formik";
-import { Link, useNavigate, Navigate } from "react-router-dom";
-import { signUpSchema } from "../../validation/signUpSchema";
-import { useState } from "react";
-import ImageInput from "../ImageInput/ImageInput";
 import { useSignUpUserMutation } from "../../App/api/authApi";
-import { toast } from "react-hot-toast";
-import { useSelector } from "react-redux";
 import { getAuthStatus } from "../../App/feature/authSlice";
+import { signUpSchema } from "../../validation/signUpSchema";
+import ImageInput from "../ImageInput/ImageInput";
 
 const SignUp = () => {
   const [profilePic, setProfilePic] = useState<string>("");

@@ -1,7 +1,7 @@
 import React from "react";
 import { IKContext, IKUpload } from "imagekitio-react";
-import { UploadResponse } from "../../utils/types";
 import { toast } from "react-hot-toast";
+import { UploadResponse } from "../../utils/types";
 
 const environment = import.meta.env;
 

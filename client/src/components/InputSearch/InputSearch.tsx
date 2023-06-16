@@ -1,6 +1,6 @@
-import { setSearch } from "../../App/feature/searchSlice";
 import { useDispatch } from "react-redux";
 import { debounce } from "lodash";
+import { setSearch } from "../../App/feature/searchSlice";
 
 const InputSearch = () => {
   const dispatch = useDispatch();

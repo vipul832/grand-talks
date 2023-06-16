@@ -1,4 +1,6 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { toast } from "react-hot-toast";
 import {
   Typography,
   Button,
@@ -8,11 +10,9 @@ import {
   MenuList,
   MenuItem,
 } from "@material-tailwind/react";
-import { useSelector, useDispatch } from "react-redux";
 import { getUserInfo, removeUser } from "../../App/feature/userSlice";
 import { setSignOutUser } from "../../App/feature/authSlice";
 import { FaPowerOff } from "react-icons/fa";
-import { toast } from "react-hot-toast";
 
 const profileMenuItems = [
   {
