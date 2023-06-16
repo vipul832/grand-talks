@@ -1,6 +1,6 @@
 # Grand Talk's
 
-Grand talk's is application where you can create and publish you blog with all functionality of edit, delete and draft as per you requirement.Currently this project is on early state and many new update will come.Stay tune for more feature.
+Grand talk's is an application where you can create and publish your blog with all functionality of edit, deleting, and drafting as per your requirements. Currently, this project is in an early state and many new updates will come. Stay tuned for more features.
 
 [Demo Link](https://d1mngkfflca1b7.cloudfront.net/)
 
@@ -12,13 +12,13 @@ Grand talk's is application where you can create and publish you blog with all f
 **Server:** Node, Express.
 
 ## Feature
-(**Note:** Wait until you profile photo and thumbnail image are upload to the server in signup and blog editor page respectively for better experience)
+(**Note:** Wait until your profile photo and thumbnail image are uploaded to the server in the signup and blog editor page respectively for a better experience)
 
-1. You can write,update and save as per you requirement.
+1. You can write, update and save as per your requirement.
 2. you can register and login in application.
 
 ## Future Plan
-- Add functinality of react and comment in application.
+- Add functionality of react and comment in the application.
 - Google and Login Authentication.
 
 
