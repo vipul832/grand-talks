@@ -198,7 +198,7 @@ const SignUp = () => {
               Register
             </Button>
             <Typography color="gray" className="mt-4 text-center font-normal">
-              Already have an account?{" "}
+              Already have an account?
               <Link
                 to="/signin"
                 className="font-medium text-purple-500 transition-colors hover:text-blue-700"
